@@ -1,0 +1,202 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \documentclass[]{deedy-resume-openfont}
+  \usepackage{fontawesome}
+  \usepackage{atbegshi,picture}
+
+      \begin{document}
+      
+      
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %
+  %     Profile
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  
+\namesection{ UTKARSH} {KHURANA}\\ \vspace{0pt}
+   
+
+    %
+%   \usepackage{ragged2e}
+% \justifying 
+    \large {\faMobile  { +91-787-720-3394 }}       $|$ \href{mailto:khurana.utkarsh30@gmail.com}{\faEnvelopeO{ 
+            khurana.utkarsh30@gmail.com   }} $|$ 
+    \href{http://linkedin.com/in/utkarshk30}{ \faLinkedin  { utkarshk30}} $|$
+    \href{http://github.com/utkarshk30}{\faGithub{ utkarshk30   }} 
+    \href{http://utkarshk30.netlify.app}{\faGlobe { portfolio   }} 
+    
+    % $|$    \faMapMarker { Jaipur,India} \end{center}
+% \begin{flushright}    \faMapMarker { Jaipur,India}  \end{flushright} 
+\par\noindent\rule{\textwidth}{0.2pt}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Education
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{{Education}}
+\raggedright
+
+    \runsubsection{\faGraduationCap{ The LNM Institute of Information Technology(LNMIIT)}}\hspace*{\fill}  \location{\faCalendar{
+   Nov 2020 - June 2024}}\\
+    \descript{Bachelor of Technology \textbar{} Computer Science  }\hspace*{\fill}\location{\faMapMarker    {     Jaipur,India}}
+    {  {\newline{}\textbf { {\underline{Relevant Coursework:}}} \textit{Operating Systems, Data Structures, Analysis Of Algorithms, Optimization Techniques,\newline Computer Networks, Database Management, OOPS, Image Processing}}}
+    
+    
+    \sectionsep
+  
+
+    \runsubsection{\faGraduationCap{ St. Anselm Sr. Sec. School}}\hspace*{\fill}  \location{\faCalendar{
+  2019 - 2020}}\\
+    \descript{ \normalfont{ Class XII (Higher Secondary)} \textbar{} Percentage : 91.8 \%}\hspace*{\fill}\location{\faMapMarker {   Alwar, Rajasthan}}\
+    
+    \sectionsep
+  
+
+    \runsubsection{\faGraduationCap{ Chinar Public School}}\hspace*{\fill}  \location{\faCalendar{ 2017 - 2018}}\\
+    \descript{\normalfont{ Class X (Secondary)} \textbar{} Percentage: 94\%}\hspace*{\fill}\location{\faMapMarker {  Alwar, Rajasthan}}\
+    
+   \sectionsep
+       \par\noindent\rule{\textwidth}{0.4pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\raggedright
+\begin{tabular}{p{5cm}p{14.5cm}}
+
+
+\descript{Languages} & {\location{C/C++, JavaScript, Python, HTML/CSS/Bootstrap, LaTex}} \\
+\descript{Libraries/Frameworks} & {\location{Node.js, WordPress, OpenCV, Pandas, NumPy, Matplotlib}} \\
+\descript{Tools / Platforms} & {\location{Git, Github,Linux , Google Cloud Platform, VS Code, Visual Studio, Eclipse}} \\
+\descript{Databases} & {\location{MySQL }} \\
+
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        %
+        %     Projects
+        %
+        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        \par\noindent\rule{\textwidth}{0.4pt}
+        \section{Projects}
+        \raggedright
+        
+            \runsubsection{\large{E-Voting}}
+            \descript{| \href{https://github.com/utkarshk30/Online-Voting-System}{\faExternalLink
+{ Github}}}\hfill \location{HTML, CSS, Bootstrap, PHP, Javascript, MySql}\\
+            \begin{tightemize}
+           
+  \item Implemented an online voting web-app for College elections to elect President and Gymkhana members, ideally designed to hold elections more transparent \& secure.
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Face-shape Detector \textbar{}}}
+            \descript{ \href{https://github.com/utkarshk30/Detection-of-face-shape}{\faExternalLink
+{ Github}}}\hfill \location{Python, OpenCV}\\
+            \begin{tightemize}
+  \item Used various image classification and segmentation techniques in OpenCV using Caffe and Haar- Cascade trained models to effectively determine the Face-shape of an individual.
+\end{tightemize}
+            \sectionsep
+          
+        
+            \runsubsection{\large{Weather Detection Website}}
+           \hfill \location{HTML,CSS, Vanilla JS, Ajax, APIs}\\
+            \begin{tightemize}
+                \item Detects the region\textquotesingle{}s current weather and displays the accurate
+weather conditions, including temperature, humidity, wind
+pressure, and more using different APIs
+              \end{tightemize}
+            \sectionsep
+            %%%%%%%%%%%%%%%%%%%5
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Awards
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\par\noindent\rule{\textwidth}{0.4pt}
+\section{Achievements}
+\begin{tightemize}
+\item Selected in {\addfontfeatures{FakeBold=4.5}  {Amazon ML Summer School 2022}} among 25000+ Applicants.\\
+\item Selected among thousands of applicants in {\addfontfeatures{FakeBold=4.5}  {microsoft student partner}} programme.
+\item Represented and Lead Rajasthan Team at {\addfontfeatures{FakeBold=4.5}  {IIT Delhi}} for {\addfontfeatures{FakeBold=4.5}  { VVM national finals.}}\\
+\item Awarded with Certificate of Appreciation By {\addfontfeatures{FakeBold=4.5}  {Ministry of HRD.}}\\
+\item Secured 98.20 percentile({\addfontfeatures{FakeBold=4.5}  {Top 2 \% among 1.2 million students}}) in JEE Mains 2020.\\
+\item Highest rated 3 star on{\addfontfeatures{FakeBold=4.5}  { Codechef}}. 
+
+\end{tightemize}
+      \ 
+      
+      \par\noindent\rule{\textwidth}{0.4pt}
+\section{Extra-Curricular}
+
+
+{\addfontfeatures{FakeBold=4.5}  {Microsoft Learn Student Ambassador(MLSA)}}
+\hfill \location{\faCalendar{ April 2022 - Present}}
+\begin{tightemize}
+\item Learn Student Ambassadors are a global group of campus leaders who are eager to help fellow students, create robust tech communities and develop technical and career skills for the future
+
+\end{tightemize}
+
+{\addfontfeatures{FakeBold=4.5}  {Quizzinga, LNMIIT Quiz Club}}
+\hfill \location{\faCalendar{ Dec 2020 - Present}}
+\begin{tightemize}
+\item Coordinated with team organizing and hosting various quiz events and representing college in many national level contests like TATA -Crucible.
+
+\end{tightemize}
+
+      \end{document}
